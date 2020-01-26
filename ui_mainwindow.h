@@ -44,6 +44,13 @@ public:
     QWidget *page_2;
     QLabel *bannerPage2;
     QPushButton *nextPageButton_2;
+    QLabel *roomTypeLabel2;
+    QLabel *taxLabel;
+    QLabel *parkingFeeLabel2;
+    QLabel *resortFeeLabel3;
+    QLabel *totalLabel2;
+    QLabel *paymentTypeLabel2;
+    QLabel *payLabel2;
     QWidget *page_3;
     QLabel *bannerPage3;
     QPushButton *exitButton;
@@ -59,7 +66,7 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         stackedWidget = new QStackedWidget(centralwidget);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
-        stackedWidget->setGeometry(QRect(0, -10, 1241, 1111));
+        stackedWidget->setGeometry(QRect(0, 10, 1241, 1111));
         stackedWidget->setAutoFillBackground(false);
         stackedWidget->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 100));"));
         page = new QWidget();
@@ -104,7 +111,7 @@ public:
         font2.setFamily(QString::fromUtf8("Goudy Old Style"));
         font2.setPointSize(16);
         nameLabel->setFont(font2);
-        nameLabel->setAutoFillBackground(true);
+        nameLabel->setAutoFillBackground(false);
         nameLabel->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
         roomTypeLabel = new QLabel(page);
         roomTypeLabel->setObjectName(QString::fromUtf8("roomTypeLabel"));
@@ -158,6 +165,48 @@ public:
         nextPageButton_2->setFont(font);
         nextPageButton_2->setStyleSheet(QString::fromUtf8("background-color: rgb(64, 63, 63);\n"
 "color: rgb(255, 255, 255);"));
+        roomTypeLabel2 = new QLabel(page_2);
+        roomTypeLabel2->setObjectName(QString::fromUtf8("roomTypeLabel2"));
+        roomTypeLabel2->setGeometry(QRect(70, 140, 181, 51));
+        roomTypeLabel2->setFont(font2);
+        roomTypeLabel2->setAutoFillBackground(false);
+        roomTypeLabel2->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
+        taxLabel = new QLabel(page_2);
+        taxLabel->setObjectName(QString::fromUtf8("taxLabel"));
+        taxLabel->setGeometry(QRect(70, 200, 181, 51));
+        taxLabel->setFont(font2);
+        taxLabel->setAutoFillBackground(false);
+        taxLabel->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
+        parkingFeeLabel2 = new QLabel(page_2);
+        parkingFeeLabel2->setObjectName(QString::fromUtf8("parkingFeeLabel2"));
+        parkingFeeLabel2->setGeometry(QRect(70, 260, 181, 51));
+        parkingFeeLabel2->setFont(font2);
+        parkingFeeLabel2->setAutoFillBackground(false);
+        parkingFeeLabel2->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
+        resortFeeLabel3 = new QLabel(page_2);
+        resortFeeLabel3->setObjectName(QString::fromUtf8("resortFeeLabel3"));
+        resortFeeLabel3->setGeometry(QRect(70, 320, 181, 51));
+        resortFeeLabel3->setFont(font2);
+        resortFeeLabel3->setAutoFillBackground(false);
+        resortFeeLabel3->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
+        totalLabel2 = new QLabel(page_2);
+        totalLabel2->setObjectName(QString::fromUtf8("totalLabel2"));
+        totalLabel2->setGeometry(QRect(70, 380, 181, 51));
+        totalLabel2->setFont(font2);
+        totalLabel2->setAutoFillBackground(false);
+        totalLabel2->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
+        paymentTypeLabel2 = new QLabel(page_2);
+        paymentTypeLabel2->setObjectName(QString::fromUtf8("paymentTypeLabel2"));
+        paymentTypeLabel2->setGeometry(QRect(70, 490, 181, 51));
+        paymentTypeLabel2->setFont(font2);
+        paymentTypeLabel2->setAutoFillBackground(false);
+        paymentTypeLabel2->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
+        payLabel2 = new QLabel(page_2);
+        payLabel2->setObjectName(QString::fromUtf8("payLabel2"));
+        payLabel2->setGeometry(QRect(70, 550, 181, 51));
+        payLabel2->setFont(font2);
+        payLabel2->setAutoFillBackground(false);
+        payLabel2->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
         stackedWidget->addWidget(page_2);
         page_3 = new QWidget();
         page_3->setObjectName(QString::fromUtf8("page_3"));
@@ -178,7 +227,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1242, 29));
+        menubar->setGeometry(QRect(0, 0, 1242, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -186,7 +235,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -209,6 +258,13 @@ public:
         vehicleParkingLabel->setText(QApplication::translate("MainWindow", "Vehicle Parking:", nullptr));
         bannerPage2->setText(QApplication::translate("MainWindow", "  Cost & Payment Information", nullptr));
         nextPageButton_2->setText(QApplication::translate("MainWindow", "Next", nullptr));
+        roomTypeLabel2->setText(QApplication::translate("MainWindow", "Room Type:", nullptr));
+        taxLabel->setText(QApplication::translate("MainWindow", "Tax:", nullptr));
+        parkingFeeLabel2->setText(QApplication::translate("MainWindow", "Parking Fee:", nullptr));
+        resortFeeLabel3->setText(QApplication::translate("MainWindow", "Resort Fee:", nullptr));
+        totalLabel2->setText(QApplication::translate("MainWindow", "Total:", nullptr));
+        paymentTypeLabel2->setText(QApplication::translate("MainWindow", "Payment Type:", nullptr));
+        payLabel2->setText(QApplication::translate("MainWindow", "Pay:", nullptr));
         bannerPage3->setText(QApplication::translate("MainWindow", "Reservation Confirmation", nullptr));
         exitButton->setText(QApplication::translate("MainWindow", "Exit", nullptr));
     } // retranslateUi
