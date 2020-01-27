@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1323</width>
-    <height>1172</height>
+    <width>1322</width>
+    <height>1152</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>0</x>
       <y>10</y>
-      <width>1241</width>
-      <height>1111</height>
+      <width>1331</width>
+      <height>1091</height>
      </rect>
     </property>
     <property name="autoFillBackground">
@@ -30,7 +30,7 @@
      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 100));</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page">
      <property name="autoFillBackground">
@@ -60,54 +60,12 @@ color: rgb(255, 255, 255);</string>
        <string>Next</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton">
-      <property name="geometry">
-       <rect>
-        <x>900</x>
-        <y>520</y>
-        <width>149</width>
-        <height>32</height>
-       </rect>
-      </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radioButton_2">
-      <property name="geometry">
-       <rect>
-        <x>900</x>
-        <y>580</y>
-        <width>149</width>
-        <height>32</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>RadioButton</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox">
-      <property name="geometry">
-       <rect>
-        <x>920</x>
-        <y>390</y>
-        <width>123</width>
-        <height>80</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>GroupBox</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="bannerPage1">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1241</width>
+        <width>1321</width>
         <height>101</height>
        </rect>
       </property>
@@ -133,8 +91,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="nameLabel">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>340</y>
+        <x>150</x>
+        <y>230</y>
         <width>161</width>
         <height>41</height>
        </rect>
@@ -158,8 +116,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="roomTypeLabel">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>420</y>
+        <x>150</x>
+        <y>300</y>
         <width>161</width>
         <height>41</height>
        </rect>
@@ -183,8 +141,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="dateLabel">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>500</y>
+        <x>150</x>
+        <y>440</y>
         <width>151</width>
         <height>41</height>
        </rect>
@@ -208,9 +166,9 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="estimatedCostLabel">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>150</x>
         <y>820</y>
-        <width>281</width>
+        <width>241</width>
         <height>41</height>
        </rect>
       </property>
@@ -233,8 +191,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="numberOfGuestsLabel">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>670</y>
+        <x>150</x>
+        <y>580</y>
         <width>241</width>
         <height>41</height>
        </rect>
@@ -258,8 +216,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="numberOfDaysLabel">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>590</y>
+        <x>150</x>
+        <y>510</y>
         <width>231</width>
         <height>41</height>
        </rect>
@@ -283,8 +241,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="vehicleParkingLabel">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>750</y>
+        <x>150</x>
+        <y>660</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -305,15 +263,210 @@ color: rgb(255, 255, 255);</string>
        <string>Vehicle Parking:</string>
       </property>
      </widget>
+     <widget class="QGroupBox" name="reservationGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>300</y>
+        <width>431</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(64, 66, 78);</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QRadioButton" name="StandardQueen">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>211</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Standard 2-Queen</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="AtriumQueen">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>20</y>
+         <width>201</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Atrium 2-Queen</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="StandardKing">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>201</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Standard 2-King</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="AtriumKing">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>60</y>
+         <width>201</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Atrium 2-King</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="userNameText">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>220</y>
+        <width>271</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Goudy Old Style</family>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Enter Name Here</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateEdit">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>440</y>
+        <width>145</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(64, 66, 78);</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="adultSpinBox">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>580</y>
+        <width>60</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(64, 66, 78);</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="childrenSpinBox">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>580</y>
+        <width>60</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(64, 66, 78);</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="numberOfDaysSpinBox">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>510</y>
+        <width>60</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(64, 66, 78);</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="vehicleParkingCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>670</y>
+        <width>125</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Goudy Old Style</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(64, 66, 78);</string>
+      </property>
+      <property name="text">
+       <string>Needed</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="estimatedCost">
+      <property name="geometry">
+       <rect>
+        <x>429</x>
+        <y>830</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>760</y>
+        <width>1181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_2">
      <widget class="QLabel" name="bannerPage2">
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>10</y>
-        <width>1241</width>
-        <height>101</height>
+        <y>0</y>
+        <width>1331</width>
+        <height>111</height>
        </rect>
       </property>
       <property name="font">
@@ -540,8 +693,8 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>10</y>
-        <width>1241</width>
+        <y>0</y>
+        <width>1331</width>
         <height>101</height>
        </rect>
       </property>
@@ -561,7 +714,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
-       <string>Reservation Confirmation</string>
+       <string>  Reservation Confirmation</string>
       </property>
      </widget>
      <widget class="QPushButton" name="exitButton">
@@ -596,8 +749,8 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1323</width>
-     <height>25</height>
+     <width>1322</width>
+     <height>29</height>
     </rect>
    </property>
   </widget>
