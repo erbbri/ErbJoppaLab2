@@ -22,7 +22,20 @@ private slots:
 
     void on_exitButton_clicked();
 
+    void on_StandardQueen_clicked();
+
+    void on_StandardKing_clicked();
+
+    void on_AtriumQueen_clicked();
+
+    void on_AtriumKing_clicked();
+
+    void on_vehicleParkingCheckBox_stateChanged(int arg1);
+
+    void on_numberOfDaysSpinBox_valueChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
+    void calculateRoom();
 };
 #endif // MAINWINDOW_H

@@ -56,6 +56,8 @@ public:
     QCheckBox *vehicleParkingCheckBox;
     QLabel *estimatedCost;
     QFrame *line;
+    QLabel *numberOfDaysLabel_2;
+    QLabel *numberOfDaysLabel_3;
     QWidget *page_2;
     QLabel *bannerPage2;
     QPushButton *nextPageButton_2;
@@ -138,7 +140,7 @@ public:
         estimatedCostLabel->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
         numberOfGuestsLabel = new QLabel(page);
         numberOfGuestsLabel->setObjectName(QString::fromUtf8("numberOfGuestsLabel"));
-        numberOfGuestsLabel->setGeometry(QRect(150, 580, 241, 41));
+        numberOfGuestsLabel->setGeometry(QRect(150, 590, 241, 41));
         numberOfGuestsLabel->setFont(font2);
         numberOfGuestsLabel->setAutoFillBackground(false);
         numberOfGuestsLabel->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
@@ -157,64 +159,93 @@ public:
         reservationGroupBox = new QGroupBox(page);
         reservationGroupBox->setObjectName(QString::fromUtf8("reservationGroupBox"));
         reservationGroupBox->setGeometry(QRect(420, 300, 431, 111));
-        reservationGroupBox->setStyleSheet(QString::fromUtf8("background-color: rgb(64, 66, 78);"));
+        reservationGroupBox->setStyleSheet(QString::fromUtf8("background-color: rgb(64, 63, 63);"));
         StandardQueen = new QRadioButton(reservationGroupBox);
         StandardQueen->setObjectName(QString::fromUtf8("StandardQueen"));
         StandardQueen->setGeometry(QRect(10, 20, 211, 32));
+        StandardQueen->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         AtriumQueen = new QRadioButton(reservationGroupBox);
         AtriumQueen->setObjectName(QString::fromUtf8("AtriumQueen"));
         AtriumQueen->setGeometry(QRect(220, 20, 201, 32));
+        AtriumQueen->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         StandardKing = new QRadioButton(reservationGroupBox);
         StandardKing->setObjectName(QString::fromUtf8("StandardKing"));
         StandardKing->setGeometry(QRect(10, 60, 201, 32));
+        StandardKing->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         AtriumKing = new QRadioButton(reservationGroupBox);
         AtriumKing->setObjectName(QString::fromUtf8("AtriumKing"));
         AtriumKing->setGeometry(QRect(220, 60, 201, 32));
+        AtriumKing->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         userNameText = new QLineEdit(page);
         userNameText->setObjectName(QString::fromUtf8("userNameText"));
-        userNameText->setGeometry(QRect(420, 220, 271, 61));
+        userNameText->setGeometry(QRect(420, 220, 431, 61));
         QFont font3;
         font3.setFamily(QString::fromUtf8("Goudy Old Style"));
         font3.setPointSize(15);
         font3.setBold(true);
         font3.setWeight(75);
         userNameText->setFont(font3);
-        userNameText->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+        userNameText->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"background-color: rgb(64, 63, 63);"));
         dateEdit = new QDateEdit(page);
         dateEdit->setObjectName(QString::fromUtf8("dateEdit"));
         dateEdit->setGeometry(QRect(420, 440, 145, 36));
-        dateEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(64, 66, 78);"));
+        dateEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(64, 63, 63);\n"
+"color: rgb(255, 255, 255);"));
         adultSpinBox = new QSpinBox(page);
         adultSpinBox->setObjectName(QString::fromUtf8("adultSpinBox"));
-        adultSpinBox->setGeometry(QRect(420, 580, 60, 36));
+        adultSpinBox->setGeometry(QRect(420, 590, 60, 36));
         adultSpinBox->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"background-color: rgb(64, 66, 78);"));
+"background-color: rgb(64, 63, 63);"));
+        adultSpinBox->setMinimum(1);
         childrenSpinBox = new QSpinBox(page);
         childrenSpinBox->setObjectName(QString::fromUtf8("childrenSpinBox"));
-        childrenSpinBox->setGeometry(QRect(510, 580, 60, 36));
+        childrenSpinBox->setGeometry(QRect(600, 590, 60, 36));
         childrenSpinBox->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"background-color: rgb(64, 66, 78);"));
+"background-color: rgb(64, 63, 63);"));
         numberOfDaysSpinBox = new QSpinBox(page);
         numberOfDaysSpinBox->setObjectName(QString::fromUtf8("numberOfDaysSpinBox"));
         numberOfDaysSpinBox->setGeometry(QRect(420, 510, 60, 36));
         numberOfDaysSpinBox->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"background-color: rgb(64, 66, 78);"));
+"background-color: rgb(64, 63, 63);"));
+        numberOfDaysSpinBox->setMinimum(1);
+        numberOfDaysSpinBox->setMaximum(7);
         vehicleParkingCheckBox = new QCheckBox(page);
         vehicleParkingCheckBox->setObjectName(QString::fromUtf8("vehicleParkingCheckBox"));
-        vehicleParkingCheckBox->setGeometry(QRect(420, 670, 125, 32));
+        vehicleParkingCheckBox->setGeometry(QRect(420, 670, 131, 32));
         QFont font4;
         font4.setFamily(QString::fromUtf8("Goudy Old Style"));
         vehicleParkingCheckBox->setFont(font4);
         vehicleParkingCheckBox->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"background-color: rgb(64, 66, 78);"));
+"background-color: rgb(64, 63, 63);"));
         estimatedCost = new QLabel(page);
         estimatedCost->setObjectName(QString::fromUtf8("estimatedCost"));
-        estimatedCost->setGeometry(QRect(429, 830, 211, 31));
+        estimatedCost->setGeometry(QRect(429, 820, 241, 41));
+        QFont font5;
+        font5.setFamily(QString::fromUtf8("Goudy Old Style"));
+        font5.setPointSize(15);
+        estimatedCost->setFont(font5);
+        estimatedCost->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
         line = new QFrame(page);
         line->setObjectName(QString::fromUtf8("line"));
         line->setGeometry(QRect(30, 760, 1181, 20));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
+        numberOfDaysLabel_2 = new QLabel(page);
+        numberOfDaysLabel_2->setObjectName(QString::fromUtf8("numberOfDaysLabel_2"));
+        numberOfDaysLabel_2->setGeometry(QRect(490, 590, 91, 41));
+        QFont font6;
+        font6.setFamily(QString::fromUtf8("Goudy Old Style"));
+        font6.setPointSize(13);
+        numberOfDaysLabel_2->setFont(font6);
+        numberOfDaysLabel_2->setAutoFillBackground(false);
+        numberOfDaysLabel_2->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
+        numberOfDaysLabel_3 = new QLabel(page);
+        numberOfDaysLabel_3->setObjectName(QString::fromUtf8("numberOfDaysLabel_3"));
+        numberOfDaysLabel_3->setGeometry(QRect(670, 590, 211, 41));
+        numberOfDaysLabel_3->setFont(font6);
+        numberOfDaysLabel_3->setAutoFillBackground(false);
+        numberOfDaysLabel_3->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
         stackedWidget->addWidget(page);
         page_2 = new QWidget();
         page_2->setObjectName(QString::fromUtf8("page_2"));
@@ -301,7 +332,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -327,6 +358,8 @@ public:
         userNameText->setText(QApplication::translate("MainWindow", "Enter Name Here", nullptr));
         vehicleParkingCheckBox->setText(QApplication::translate("MainWindow", "Needed", nullptr));
         estimatedCost->setText(QString());
+        numberOfDaysLabel_2->setText(QApplication::translate("MainWindow", "Adults", nullptr));
+        numberOfDaysLabel_3->setText(QApplication::translate("MainWindow", "Children (Optional)", nullptr));
         bannerPage2->setText(QApplication::translate("MainWindow", "  Cost & Payment Information", nullptr));
         nextPageButton_2->setText(QApplication::translate("MainWindow", "Next", nullptr));
         roomTypeLabel2->setText(QApplication::translate("MainWindow", "Room Type:", nullptr));
