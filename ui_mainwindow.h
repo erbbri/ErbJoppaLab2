@@ -11,8 +11,10 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -51,6 +53,22 @@ public:
     QLabel *totalLabel2;
     QLabel *paymentTypeLabel2;
     QLabel *payLabel2;
+    QGroupBox *groupBox_2;
+    QRadioButton *americanRadio;
+    QRadioButton *visaRadio;
+    QRadioButton *mastercardRadio;
+    QRadioButton *discoverRadio;
+    QPushButton *backButton2;
+    QFrame *line;
+    QStackedWidget *cardTypeInput;
+    QWidget *americanInput;
+    QLineEdit *americanLineEditInput;
+    QWidget *visaInput;
+    QLineEdit *visaLineEditInput;
+    QWidget *mastercardInput;
+    QLineEdit *mastercardLineEditInput;
+    QWidget *discoverInput;
+    QLineEdit *discoverLineEditInput;
     QWidget *page_3;
     QLabel *bannerPage3;
     QPushButton *exitButton;
@@ -61,7 +79,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(1242, 1142);
+        MainWindow->resize(1323, 1172);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         stackedWidget = new QStackedWidget(centralwidget);
@@ -154,7 +172,7 @@ public:
         page_2->setObjectName(QString::fromUtf8("page_2"));
         bannerPage2 = new QLabel(page_2);
         bannerPage2->setObjectName(QString::fromUtf8("bannerPage2"));
-        bannerPage2->setGeometry(QRect(0, 10, 1241, 101));
+        bannerPage2->setGeometry(QRect(0, 0, 1241, 101));
         bannerPage2->setFont(font1);
         bannerPage2->setLayoutDirection(Qt::LeftToRight);
         bannerPage2->setStyleSheet(QString::fromUtf8("background-color: rgb(89, 15, 8);\n"
@@ -162,51 +180,126 @@ public:
         nextPageButton_2 = new QPushButton(page_2);
         nextPageButton_2->setObjectName(QString::fromUtf8("nextPageButton_2"));
         nextPageButton_2->setGeometry(QRect(1080, 1030, 131, 37));
-        nextPageButton_2->setFont(font);
+        QFont font3;
+        font3.setFamily(QString::fromUtf8("Goudy Old Style"));
+        font3.setPointSize(10);
+        font3.setBold(false);
+        font3.setItalic(false);
+        font3.setWeight(50);
+        nextPageButton_2->setFont(font3);
         nextPageButton_2->setStyleSheet(QString::fromUtf8("background-color: rgb(64, 63, 63);\n"
+"font: 10pt \"Goudy Old Style\";\n"
 "color: rgb(255, 255, 255);"));
         roomTypeLabel2 = new QLabel(page_2);
         roomTypeLabel2->setObjectName(QString::fromUtf8("roomTypeLabel2"));
-        roomTypeLabel2->setGeometry(QRect(70, 140, 181, 51));
+        roomTypeLabel2->setGeometry(QRect(20, 110, 181, 51));
         roomTypeLabel2->setFont(font2);
         roomTypeLabel2->setAutoFillBackground(false);
         roomTypeLabel2->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
         taxLabel = new QLabel(page_2);
         taxLabel->setObjectName(QString::fromUtf8("taxLabel"));
-        taxLabel->setGeometry(QRect(70, 200, 181, 51));
+        taxLabel->setGeometry(QRect(20, 180, 181, 51));
         taxLabel->setFont(font2);
         taxLabel->setAutoFillBackground(false);
         taxLabel->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
         parkingFeeLabel2 = new QLabel(page_2);
         parkingFeeLabel2->setObjectName(QString::fromUtf8("parkingFeeLabel2"));
-        parkingFeeLabel2->setGeometry(QRect(70, 260, 181, 51));
+        parkingFeeLabel2->setGeometry(QRect(20, 250, 181, 51));
         parkingFeeLabel2->setFont(font2);
         parkingFeeLabel2->setAutoFillBackground(false);
         parkingFeeLabel2->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
         resortFeeLabel3 = new QLabel(page_2);
         resortFeeLabel3->setObjectName(QString::fromUtf8("resortFeeLabel3"));
-        resortFeeLabel3->setGeometry(QRect(70, 320, 181, 51));
+        resortFeeLabel3->setGeometry(QRect(20, 320, 181, 51));
         resortFeeLabel3->setFont(font2);
         resortFeeLabel3->setAutoFillBackground(false);
         resortFeeLabel3->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
         totalLabel2 = new QLabel(page_2);
         totalLabel2->setObjectName(QString::fromUtf8("totalLabel2"));
-        totalLabel2->setGeometry(QRect(70, 380, 181, 51));
+        totalLabel2->setGeometry(QRect(20, 390, 181, 51));
         totalLabel2->setFont(font2);
         totalLabel2->setAutoFillBackground(false);
         totalLabel2->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
         paymentTypeLabel2 = new QLabel(page_2);
         paymentTypeLabel2->setObjectName(QString::fromUtf8("paymentTypeLabel2"));
-        paymentTypeLabel2->setGeometry(QRect(70, 490, 181, 51));
+        paymentTypeLabel2->setGeometry(QRect(20, 490, 181, 51));
         paymentTypeLabel2->setFont(font2);
         paymentTypeLabel2->setAutoFillBackground(false);
         paymentTypeLabel2->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
         payLabel2 = new QLabel(page_2);
         payLabel2->setObjectName(QString::fromUtf8("payLabel2"));
-        payLabel2->setGeometry(QRect(70, 550, 181, 51));
+        payLabel2->setGeometry(QRect(20, 620, 181, 51));
         payLabel2->setFont(font2);
         payLabel2->setAutoFillBackground(false);
         payLabel2->setStyleSheet(QString::fromUtf8("color: rgb(193, 141, 36);"));
+        groupBox_2 = new QGroupBox(page_2);
+        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+        groupBox_2->setGeometry(QRect(230, 490, 421, 81));
+        groupBox_2->setStyleSheet(QString::fromUtf8("border-color: rgb(255, 255, 255);\n"
+"font: 15pt \"Goudy Old Style\";\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(136, 133, 133);"));
+        americanRadio = new QRadioButton(groupBox_2);
+        americanRadio->setObjectName(QString::fromUtf8("americanRadio"));
+        americanRadio->setGeometry(QRect(10, 10, 201, 21));
+        visaRadio = new QRadioButton(groupBox_2);
+        visaRadio->setObjectName(QString::fromUtf8("visaRadio"));
+        visaRadio->setGeometry(QRect(10, 50, 201, 21));
+        mastercardRadio = new QRadioButton(groupBox_2);
+        mastercardRadio->setObjectName(QString::fromUtf8("mastercardRadio"));
+        mastercardRadio->setGeometry(QRect(250, 10, 171, 21));
+        discoverRadio = new QRadioButton(groupBox_2);
+        discoverRadio->setObjectName(QString::fromUtf8("discoverRadio"));
+        discoverRadio->setGeometry(QRect(250, 50, 161, 21));
+        backButton2 = new QPushButton(page_2);
+        backButton2->setObjectName(QString::fromUtf8("backButton2"));
+        backButton2->setGeometry(QRect(40, 1020, 131, 37));
+        backButton2->setFont(font3);
+        backButton2->setStyleSheet(QString::fromUtf8("background-color: rgb(64, 63, 63);\n"
+"font: 10pt \"Goudy Old Style\";\n"
+"color: rgb(255, 255, 255);"));
+        line = new QFrame(page_2);
+        line->setObjectName(QString::fromUtf8("line"));
+        line->setGeometry(QRect(20, 460, 1181, 16));
+        line->setStyleSheet(QString::fromUtf8("border-color: rgb(136, 133, 133);"));
+        line->setFrameShape(QFrame::HLine);
+        line->setFrameShadow(QFrame::Sunken);
+        cardTypeInput = new QStackedWidget(page_2);
+        cardTypeInput->setObjectName(QString::fromUtf8("cardTypeInput"));
+        cardTypeInput->setGeometry(QRect(250, 620, 301, 91));
+        cardTypeInput->setStyleSheet(QString::fromUtf8("background-color: rgb(136, 133, 133);"));
+        americanInput = new QWidget();
+        americanInput->setObjectName(QString::fromUtf8("americanInput"));
+        americanLineEditInput = new QLineEdit(americanInput);
+        americanLineEditInput->setObjectName(QString::fromUtf8("americanLineEditInput"));
+        americanLineEditInput->setGeometry(QRect(10, 20, 271, 51));
+        americanLineEditInput->setStyleSheet(QString::fromUtf8("background-color: rgb(136, 133, 133);\n"
+"font: 15pt \"Goudy Old Style\";"));
+        cardTypeInput->addWidget(americanInput);
+        visaInput = new QWidget();
+        visaInput->setObjectName(QString::fromUtf8("visaInput"));
+        visaLineEditInput = new QLineEdit(visaInput);
+        visaLineEditInput->setObjectName(QString::fromUtf8("visaLineEditInput"));
+        visaLineEditInput->setGeometry(QRect(10, 20, 271, 51));
+        visaLineEditInput->setStyleSheet(QString::fromUtf8("background-color: rgb(136, 133, 133);\n"
+"font: 15pt \"Goudy Old Style\";"));
+        cardTypeInput->addWidget(visaInput);
+        mastercardInput = new QWidget();
+        mastercardInput->setObjectName(QString::fromUtf8("mastercardInput"));
+        mastercardLineEditInput = new QLineEdit(mastercardInput);
+        mastercardLineEditInput->setObjectName(QString::fromUtf8("mastercardLineEditInput"));
+        mastercardLineEditInput->setGeometry(QRect(10, 20, 271, 51));
+        mastercardLineEditInput->setStyleSheet(QString::fromUtf8("background-color: rgb(136, 133, 133);\n"
+"font: 15pt \"Goudy Old Style\";"));
+        cardTypeInput->addWidget(mastercardInput);
+        discoverInput = new QWidget();
+        discoverInput->setObjectName(QString::fromUtf8("discoverInput"));
+        discoverLineEditInput = new QLineEdit(discoverInput);
+        discoverLineEditInput->setObjectName(QString::fromUtf8("discoverLineEditInput"));
+        discoverLineEditInput->setGeometry(QRect(10, 20, 271, 51));
+        discoverLineEditInput->setStyleSheet(QString::fromUtf8("background-color: rgb(136, 133, 133);\n"
+"font: 15pt \"Goudy Old Style\";"));
+        cardTypeInput->addWidget(discoverInput);
         stackedWidget->addWidget(page_2);
         page_3 = new QWidget();
         page_3->setObjectName(QString::fromUtf8("page_3"));
@@ -227,7 +320,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1242, 25));
+        menubar->setGeometry(QRect(0, 0, 1323, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -235,7 +328,8 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
+        cardTypeInput->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -265,6 +359,16 @@ public:
         totalLabel2->setText(QApplication::translate("MainWindow", "Total:", nullptr));
         paymentTypeLabel2->setText(QApplication::translate("MainWindow", "Payment Type:", nullptr));
         payLabel2->setText(QApplication::translate("MainWindow", "Pay:", nullptr));
+        groupBox_2->setTitle(QString());
+        americanRadio->setText(QApplication::translate("MainWindow", "American Express", nullptr));
+        visaRadio->setText(QApplication::translate("MainWindow", "Visa", nullptr));
+        mastercardRadio->setText(QApplication::translate("MainWindow", "Mastercard", nullptr));
+        discoverRadio->setText(QApplication::translate("MainWindow", "Discover", nullptr));
+        backButton2->setText(QApplication::translate("MainWindow", "Back", nullptr));
+        americanLineEditInput->setInputMask(QApplication::translate("MainWindow", "3999-999999-99999", nullptr));
+        visaLineEditInput->setInputMask(QApplication::translate("MainWindow", "4999-9999-9999-9999", nullptr));
+        mastercardLineEditInput->setInputMask(QApplication::translate("MainWindow", "5999-9999-9999-9999", nullptr));
+        discoverLineEditInput->setInputMask(QApplication::translate("MainWindow", "6999-9999-9999-9999", nullptr));
         bannerPage3->setText(QApplication::translate("MainWindow", "Reservation Confirmation", nullptr));
         exitButton->setText(QApplication::translate("MainWindow", "Exit", nullptr));
     } // retranslateUi

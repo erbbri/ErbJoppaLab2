@@ -28,3 +28,8 @@ void MainWindow::on_exitButton_clicked()
 {
     QApplication::quit();
 }
+
+void MainWindow::on_backButton2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}

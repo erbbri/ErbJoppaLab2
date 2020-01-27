@@ -30,7 +30,7 @@
      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 100));</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <property name="autoFillBackground">
@@ -311,7 +311,7 @@ color: rgb(255, 255, 255);</string>
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>10</y>
+        <y>0</y>
         <width>1241</width>
         <height>101</height>
        </rect>
@@ -346,13 +346,16 @@ color: rgb(255, 255, 255);</string>
       </property>
       <property name="font">
        <font>
-        <family>MS Gothic</family>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>Goudy Old Style</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(64, 63, 63);
+font: 10pt &quot;Goudy Old Style&quot;;
 color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
@@ -362,8 +365,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="roomTypeLabel2">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>140</y>
+        <x>20</x>
+        <y>110</y>
         <width>181</width>
         <height>51</height>
        </rect>
@@ -387,8 +390,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="taxLabel">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>200</y>
+        <x>20</x>
+        <y>180</y>
         <width>181</width>
         <height>51</height>
        </rect>
@@ -412,8 +415,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="parkingFeeLabel2">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>260</y>
+        <x>20</x>
+        <y>250</y>
         <width>181</width>
         <height>51</height>
        </rect>
@@ -437,7 +440,7 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="resortFeeLabel3">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>20</x>
         <y>320</y>
         <width>181</width>
         <height>51</height>
@@ -462,8 +465,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="totalLabel2">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>380</y>
+        <x>20</x>
+        <y>390</y>
         <width>181</width>
         <height>51</height>
        </rect>
@@ -487,7 +490,7 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="paymentTypeLabel2">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>20</x>
         <y>490</y>
         <width>181</width>
         <height>51</height>
@@ -512,8 +515,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="payLabel2">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>550</y>
+        <x>20</x>
+        <y>620</y>
         <width>181</width>
         <height>51</height>
        </rect>
@@ -533,6 +536,212 @@ color: rgb(255, 255, 255);</string>
       <property name="text">
        <string>Pay:</string>
       </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>490</y>
+        <width>421</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(255, 255, 255);
+font: 15pt &quot;Goudy Old Style&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(136, 133, 133);</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QRadioButton" name="americanRadio">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>American Express</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="visaRadio">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Visa</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="mastercardRadio">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>10</y>
+         <width>171</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Mastercard</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="discoverRadio">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>50</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Discover</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="backButton2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>1020</y>
+        <width>131</width>
+        <height>37</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Goudy Old Style</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(64, 63, 63);
+font: 10pt &quot;Goudy Old Style&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>460</y>
+        <width>1181</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(136, 133, 133);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="cardTypeInput">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>620</y>
+        <width>301</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(136, 133, 133);</string>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="americanInput">
+       <widget class="QLineEdit" name="americanLineEditInput">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>271</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(136, 133, 133);
+font: 15pt &quot;Goudy Old Style&quot;;</string>
+        </property>
+        <property name="inputMask">
+         <string>3999-999999-99999</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="visaInput">
+       <widget class="QLineEdit" name="visaLineEditInput">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>271</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(136, 133, 133);
+font: 15pt &quot;Goudy Old Style&quot;;</string>
+        </property>
+        <property name="inputMask">
+         <string>4999-9999-9999-9999</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="mastercardInput">
+       <widget class="QLineEdit" name="mastercardLineEditInput">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>271</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(136, 133, 133);
+font: 15pt &quot;Goudy Old Style&quot;;</string>
+        </property>
+        <property name="inputMask">
+         <string>5999-9999-9999-9999</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="discoverInput">
+       <widget class="QLineEdit" name="discoverLineEditInput">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>271</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(136, 133, 133);
+font: 15pt &quot;Goudy Old Style&quot;;</string>
+        </property>
+        <property name="inputMask">
+         <string>6999-9999-9999-9999</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="page_3">
