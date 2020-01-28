@@ -93,7 +93,7 @@ public:
         nextPageButton->setObjectName(QString::fromUtf8("nextPageButton"));
         nextPageButton->setGeometry(QRect(1070, 1000, 131, 37));
         QFont font;
-        font.setFamily(QString::fromUtf8("MS Gothic"));
+        font.setFamily(QString::fromUtf8("Goudy Old Style"));
         font.setBold(true);
         font.setWeight(75);
         nextPageButton->setFont(font);
@@ -259,7 +259,11 @@ public:
         nextPageButton_2 = new QPushButton(page_2);
         nextPageButton_2->setObjectName(QString::fromUtf8("nextPageButton_2"));
         nextPageButton_2->setGeometry(QRect(1080, 1030, 131, 37));
-        nextPageButton_2->setFont(font);
+        QFont font7;
+        font7.setFamily(QString::fromUtf8("MS Gothic"));
+        font7.setBold(true);
+        font7.setWeight(75);
+        nextPageButton_2->setFont(font7);
         nextPageButton_2->setStyleSheet(QString::fromUtf8("background-color: rgb(64, 63, 63);\n"
 "color: rgb(255, 255, 255);"));
         roomTypeLabel2 = new QLabel(page_2);
@@ -317,7 +321,7 @@ public:
         exitButton = new QPushButton(page_3);
         exitButton->setObjectName(QString::fromUtf8("exitButton"));
         exitButton->setGeometry(QRect(1080, 1020, 131, 37));
-        exitButton->setFont(font);
+        exitButton->setFont(font7);
         exitButton->setStyleSheet(QString::fromUtf8("background-color: rgb(64, 63, 63);\n"
 "color: rgb(255, 255, 255);"));
         stackedWidget->addWidget(page_3);
