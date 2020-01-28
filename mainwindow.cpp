@@ -7,7 +7,6 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->dateEdit->setDate(QDate::currentDate());
-
     calculateRoom();
 
 }
@@ -22,15 +21,19 @@ void MainWindow::calculateRoom()
     double subTotal = 0;
     if (ui->StandardQueen->isChecked()){
         subTotal = 284;
+        ui->adultSpinBox->setMaximum(4);
     }
     if (ui->StandardKing->isChecked()){
         subTotal = 290;
+        ui->adultSpinBox->setMaximum(3);
     }
     if (ui->AtriumQueen->isChecked()){
         subTotal = 325;
+        ui->adultSpinBox->setMaximum(4);
     }
     if (ui->AtriumKing->isChecked()){
         subTotal = 350;
+        ui->adultSpinBox->setMaximum(3);
     }
     subTotal *= ui->numberOfDaysSpinBox->value();
     if (ui->vehicleParkingCheckBox->isChecked()){
